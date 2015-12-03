@@ -1,0 +1,198 @@
+/* normalize.css v3.0.0 | MIT License | git.io/normalize */
+/**
+ * Tweaked for theguardian.com: there are some elements we don't use
+ * as well as properties/elements we restyle later anyway.
+ */
+/**
+ * Prevent iOS text size adjust after orientation change, without disabling
+ * user zoom.
+ */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/* Base headings
+   ========================================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: normal;
+  margin: 0; }
+
+/* Default type elements
+   ========================================================================== */
+blockquote {
+  margin: 0; }
+
+/* 16px */
+/* 20px */
+/*
+*	$point: breakpoint integer in px
+*	$constraint: Constraint for media query (min/max)
+*	$feature: Media feature of query (width/height)
+*/
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
+html {
+  min-height: 100%;
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  @media screen and (min-width: 37.5em) {
+    html {
+      height: 100%; } }
+
+body {
+  background-color: #f8f8f8;
+  color: #1f1f1f;
+  font-family: "Libre Baskerville", serif;
+  font-size: 100%;
+  /* 16px */
+  height: 100%;
+  line-height: 1.25;
+  /* 20px */ }
+
+::selection {
+  background-color: rgba(102, 102, 102, 0.8);
+  color: #fff;
+  text-shadow: none; }
+
+.site {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center; }
+
+.main-content {
+  padding: 3.75em 1.25em;
+  /* 60px 20px */
+  max-width: 34em;
+  /* 544px */ }
+
+a {
+  color: #039be5;
+  text-decoration: none; }
+  a:hover, a:focus {
+    background-image: linear-gradient(to left, #039be5 50%, #039be5 50%);
+    background-position: 0 17px;
+    /* 14px */
+    background-repeat: repeat-x;
+    background-size: 1px 1px;
+    text-shadow: 2px 0 0 #f8f8f8, -2px 0 0 #f8f8f8;
+    text-decoration: none; }
+
+p,
+.p {
+  font-size: 0.938em;
+  /* 15px */
+  line-height: 1.6;
+  /* 24px */
+  margin: 0 0 1.6em;
+  /* 0 0 24px */ }
+
+.text-large {
+  font-size: 2.5em;
+  /* 40px */
+  font-style: italic;
+  display: inline-block;
+  line-height: 1;
+  /* 40px */
+  position: relative;
+  margin-bottom: 1.5em;
+  /* 60px */ }
+  .text-large::after {
+    content: '';
+    position: absolute;
+    bottom: -0.9em;
+    /* -36px */
+    left: 0;
+    width: 0.9em;
+    /* 36px */
+    background-color: #333333;
+    height: 3px; }
